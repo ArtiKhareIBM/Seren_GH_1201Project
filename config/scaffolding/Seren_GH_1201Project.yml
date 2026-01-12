@@ -13,6 +13,11 @@ packages:
   gitUrl: https://gitlab.com/ArtiKhareGitlabnew
   gitUsername: chandan_sinha
   gitBranch: master
+- name: upperfspackage
+  gitServerName: srcCtrl_bitbucket_Arti
+  gitUrl: https://bitbucket.org/testartiibm
+  gitUsername: artikhare
+  gitBranch: master
 services:
 - serviceName: project.seren_gh_1201.integrations:gitlabfs
   packages:
