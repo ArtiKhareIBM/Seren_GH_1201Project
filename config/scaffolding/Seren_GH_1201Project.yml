@@ -14,14 +14,33 @@ packages:
   gitUsername: chandan_sinha
   gitBranch: master
 - name: upperfspackage
+  version: "1.0"
   gitServerName: srcCtrl_bitbucket_Arti
   gitUrl: https://bitbucket.org/testartiibm
   gitUsername: artikhare
   gitBranch: master
 services:
+- serviceName: project.seren_gh_1201.integrations:bitbucketfs
+  packages:
+  - name: Seren_GH_1201Project
+    version: "1.0"
+  - name: upperfspackage
+    version: "1.0"
+  - name: substractpackage
+    version: "1.0"
+- serviceName: UpperFSPackage:upperfs
+  packages:
+  - name: upperfspackage
+    version: "1.0"
+- serviceName: pub.string:toUpper
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2070
 - serviceName: project.seren_gh_1201.integrations:gitlabfs
   packages:
   - name: Seren_GH_1201Project
+    version: "1.0"
+  - name: upperfspackage
     version: "1.0"
   - name: substractpackage
     version: "1.0"
